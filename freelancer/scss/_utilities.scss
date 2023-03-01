@@ -1,0 +1,153 @@
+.container {
+  max-width: $max-width;
+  padding: 0 1.4rem;
+  margin: auto;
+}
+
+// button
+%btn-shared {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  &-primary {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $primary-color;
+  }
+  &-light {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $light-color;
+  }
+  &-dark {
+    @extend %btn-shared;
+    color: #fff;
+    background-color: $dark-color;
+  }
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: $primary-color;
+}
+
+// background
+.bg {
+  &-dark {
+    background-color: $dark-color;
+  }
+  &-primary {
+    background-color: $primary-color;
+  }
+  &-light {
+    background-color: $light-color;
+  }
+}
+
+// padding
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+.px {
+  &-1 {
+    padding: 0 1rem;
+  }
+  &-2 {
+    padding: 0 2rem;
+  }
+  &-3 {
+    padding: 0 3rem;
+  }
+  &-4 {
+    padding: 0 4rem;
+  }
+}
+
+// margin
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.border-bottom {
+  background-color: $primary-color;
+  width: 3rem;
+  height: 6px;
+  margin: 0 auto 1rem auto;
+  border: 2px solid $dark-color;
+}
+.border-bottom-white {
+  background-color: $primary-color;
+  width: 3rem;
+  height: 6px;
+  margin: 0 auto 1rem auto;
+  border: 2px solid $primary-color;
+}
+.lead {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  word-spacing: 2px;
+}
+
+.active_page {
+  border-bottom: 3px $primary-color solid !important;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  background-color: $medium-color;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  margin: 0 .5rem;
+}
+.owl-theme .owl-nav{
+  visibility: hidden;
+}
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.owl-theme .owl-dots .owl-dot.active{
+  background-color: $primary-color;
+
+}

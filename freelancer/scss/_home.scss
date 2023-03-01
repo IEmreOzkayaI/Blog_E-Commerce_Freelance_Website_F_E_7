@@ -1,0 +1,97 @@
+#home {
+  // home section a
+  &__a {
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      background-color: $dark-color;
+      color: $light-color;
+      padding: 2rem;
+
+      span {
+        color: $primary-color;
+        font-size: 3rem;
+        padding-bottom: 0.5rem;
+      }
+
+      div {
+        &:nth-child(1) i {
+          padding-bottom: 0.5rem;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  // home section b
+  &__b {
+    .profile {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      background-color: $dark-color;
+      color: $light-color;
+      span {
+        color: $primary-color;
+        font-size: 3rem;
+        padding-bottom: 0.5rem;
+      }
+      li {
+        &.title {
+          font-size: 1.5rem;
+        }
+        &.number {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      }
+      div {
+        padding: 3rem 0;
+      }
+    }
+  }
+
+  // home section c
+  &__c {
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      text-align: center;
+
+      &__step {
+        position: absolute;
+        top: -60px;
+        right: 0;
+        background-color: $primary-color;
+        padding: 0.5rem 1rem;
+        border-radius: 50%;
+        transition: all 0.5s;
+      }
+
+      &__icon {
+        position: relative;
+        span {
+          font-size: 3rem;
+          background-color: $dark-color;
+          padding: 2rem;
+          border-radius: 50%;
+          transition: all 0.5s;
+          color: $light-color;
+        }
+        &:hover > span {
+          background-color: $primary-color;
+          color: $dark-color;
+        }
+
+        &:hover > div {
+          background-color: $dark-color;
+          color: $light-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+npm install node.js => node js kur
+npm init --yes => package.json oluşturmak için
+npm i node-sass => sass kurulumu
+css ve sass klasörleri oluştur
+"sass": "node sass -w sass -o css" => sass için script oluştur
+npm run sass=> bunu çalıştırmak için
+çalıştığı an scss içerisindeki tüm kod css klasöründe oluşturulur.
+dönüşümde sıkıştırmak için "sass": "node sass -w sass -o css --output-style compressed"
+font eklentisi prompt
+yazı akışı için js hazır alındı
+buton animasyonu için animate.css kullanılıcak
+npm install owl.carousel => slider yapımı için
+lightbox kullanıldı -> yapıklan işler için
+form için formspree kullanıldı ya da netlifyı kullanabilirsin.
